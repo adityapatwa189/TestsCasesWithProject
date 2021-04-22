@@ -1,4 +1,4 @@
-﻿//using NUnit;
+﻿using NUnit;
 using NUnit.Framework;
 using System;
 using PractiseTests;
@@ -14,15 +14,12 @@ namespace PracticeTestNunit
         {
             obj = new StringOperations();
         }
-        [Test]
-        public void StringOperationso_onBothNames_ReturnFullName()
+        [TestCase("Ram","Das","Das , Ram")]
+        public void StringOperationso_onBothNames_ReturnFullName(string fname,string lname,string ExpectedResult)
         {
             //StringOperations obj = new StringOperations();
-            var result=obj.Concat("ram","das");
-            var lastname = "das";
-            var firstname = "ram";
-            var ans = $"{lastname} , {firstname}";
-            Assert.That("das , ram", Is.EqualTo(result));
+            var result=obj.Concat("ram","das");            
+            Assert.That(ExpectedResult, Is.EqualTo(result));
         }
    
         [TestCase(null,"hi")]

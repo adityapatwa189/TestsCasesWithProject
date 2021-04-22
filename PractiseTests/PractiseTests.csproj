@@ -48,6 +48,8 @@
     <Compile Include="Bird.cs" />
     <Compile Include="BirdType.cs" />
     <Compile Include="AfricanBird.cs" />
+    <Compile Include="EuropeanBird.cs" />
+    <Compile Include="NorwegianBird.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringOperations.cs" />

@@ -10,33 +10,12 @@ namespace PractiseTests
     {
         public AfricanBird(BirdType birdType) : base(birdType)
         {
+
         }
 
         public override double getSpeed()
         {
-            return getBaseSpeed();
-        }
-    }
-    class EuropeanBird : Bird
-    {
-        public EuropeanBird(BirdType birdType) : base(birdType)
-        {
-        }
-
-        public override double getSpeed()
-        {
-            return getBaseSpeed() - getLoadFactor() * numberOfCoconuts;
-        }
-    }
-    class NorwegianBird : Bird
-    {
-        public NorwegianBird(BirdType birdType) : base(birdType)
-        {
-        }
-
-        public override double getSpeed()
-        {
-            return (isNailed) ? 0 : getBaseSpeed(voltage);
+            return 20;
         }
     }
 }

@@ -5,12 +5,6 @@ namespace PractiseTests
     abstract class Bird
     {
         private BirdType _birdtype;
-
-        public int numberOfCoconuts { get; private set; }
-
-        public bool isNailed { get; private set; }
-
-        public int voltage { get; private set; }
         public Bird(BirdType birdType)
         {
 
@@ -37,23 +31,5 @@ namespace PractiseTests
         //    throw new NotSupportedException("Should be unreachable");
 
         //}
-
-        public int getBaseSpeed(int voltage)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int getLoadFactor()
-        {
-            throw new NotImplementedException();
-        }
-
-
-
-        public double getBaseSpeed()
-        {
-            throw new NotImplementedException();
-
-        }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class SumOfDigits
     {
-        public int DigitSum(int number)
+        public long DigitSum(long number)
         {
             if (number == 0)
             return 0;

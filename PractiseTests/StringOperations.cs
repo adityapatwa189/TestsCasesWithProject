@@ -10,10 +10,6 @@ namespace PractiseTests
     {
         /// <summary>
 
-        ///
-
-        /// </summary>
-
         /// <param name="firstname">James</param>
 
         /// <param name="lastname">Anderson</param>
@@ -24,29 +20,17 @@ namespace PractiseTests
 
         /// </returns>
 
+        /// </summary>
         public string Concat(string firstname, string lastname)
-
         {
-
-            if(firstname == null)
-
+            if(string.IsNullOrWhiteSpace(firstname))
             {
-
                 throw new ArgumentNullException(nameof(firstname));
-
             }
-
- 
-
-            if (lastname == null)
-
+            if (string.IsNullOrWhiteSpace(lastname))
             {
-
                 throw new ArgumentNullException(nameof(lastname));
-
             }
-
-
             return $"{lastname} , {firstname}";
         }
 
